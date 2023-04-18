@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipCalculatorActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="158dp"
+        android:layout_height="25dp"
+        android:text="Tip Calculator"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="116dp"
+        android:layout_height="34dp"
+        android:text="Check amount :"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="119dp"
+        android:layout_height="39dp"
+        android:text="Party Size:"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="222dp"
+        android:layout_height="42dp"
+        android:text="Tips and Totals(per person)"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="56dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="20%"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="99dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tips: 15%"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="25%"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="92dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Total: 15%"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="577dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="67dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="20%"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="577dp" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="25%"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="569dp" />
+
+    <EditText
+        android:id="@+id/checkAmountValue"
+        android:layout_width="262dp"
+        android:layout_height="39dp"
+        android:clickable="true"
+        android:editable="true"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <EditText
+        android:id="@+id/partySizeValue"
+        android:layout_width="263dp"
+        android:layout_height="44dp"
+        android:clickable="true"
+        android:editable="true"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <Button
+        android:id="@+id/buttonCompute"
+        android:layout_width="219dp"
+        android:layout_height="74dp"
+        android:onClick="clickedButton"
+        android:text="COMPUTE TIP"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/fifteenPercentTipValue"
+        android:layout_width="59dp"
+        android:layout_height="49dp"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/twentyPercentTipValue"
+        android:layout_width="49dp"
+        android:layout_height="53dp"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/twentyfivePercentTipValue"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        tools:layout_editor_absoluteX="355dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <TextView
+        android:id="@+id/fifteenPercentTotalValue"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="578dp" />
+
+    <TextView
+        android:id="@+id/twentyPercentTotalValue"
+        android:layout_width="59dp"
+        android:layout_height="55dp"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="569dp" />
+
+    <TextView
+        android:id="@+id/twentyfivePercentTotalValue"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        tools:layout_editor_absoluteX="362dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
